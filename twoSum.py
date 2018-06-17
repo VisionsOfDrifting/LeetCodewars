@@ -25,6 +25,6 @@ nums = [1, 7, 11, 15]
 print(nums)
 D = dict(zip(nums, range(len(nums))))
 print(D)
-target = 23
+target = 22
 print("target = ", target)
 print(twoSum(nums, D, target))
