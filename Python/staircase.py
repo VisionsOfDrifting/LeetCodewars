@@ -1,7 +1,8 @@
-"""This question asks given a staircase with N stairs
-   and a set X of steps that you can take at a time i.e. {1,2}
-   write an algorithm that determines the number of possible 
-   paths to reach the top of the staircase.
+"""Problem:
+   Given a staircase with N stairs and a set X of steps 
+   that you can take at a time i.e. {1,2} write an algorithm 
+   that determines the number of possible paths to reach the 
+   top of the staircase.
    Note: There are multiple solutions, however, the dynamic
    programming solution is preferable to the others. """
 #It would take minimal effort to modify this to output the 
