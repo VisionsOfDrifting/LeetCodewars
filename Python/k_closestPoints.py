@@ -7,9 +7,9 @@
    then implement a method to find the smallest k. 
 """
 #  Note: A couple methods for finding smallest k are:
-#  1.Using a sorting algorithm and returning the first k
+#  1.Using a sorting algorithm and returning the first k -- O(nlogn)
 #  2.Building a maxheap of the first k without sorting and
-#  swaping the top element if smaller (faster than sorting)
+#  swaping the top element if smaller (faster than sorting) -- O(n+(n-k)logk)
 
 from quickSort import sort #sort takes a list as argument
 import math
