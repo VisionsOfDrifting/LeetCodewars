@@ -43,7 +43,7 @@ for n in range(N+1): #Use the for loops to test multiple cases.
    for i in range(len(x)):
       print("The staircase is: ",n," steps.")
       print("We can take: ",x[i]," steps at a time.")
-      #print("There are: ",num_ways(n,i,0)," ways to the top.")
+      #print("There are: ",num_ways(n,x[i],0)," ways to the top.")
       print("There are: ",num_ways_bottomup(n,x[i])," way(s) to the top.")
       print(' ')
 """print("The staircase is: ",N," steps.")

@@ -19,6 +19,6 @@ def sort(array):
       return array
 
 #array = [12,4,5,6,7,3,1,15]
-array = [-1, 0, 1, 2, -1, -4]
-print(array)
-print(sort(array))
+#array = [-1, 0, 1, 2, -1, -4]
+#print(array)
+#print(sort(array))
