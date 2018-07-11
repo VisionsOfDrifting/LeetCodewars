@@ -23,3 +23,46 @@ array = [3,2,1]
 print(allButi(array))
 
 #Time 9 min 30 sec. That includes the no division.
+#Would've failed though, there is an O(N) time/space solution
+#and an O(N) time O(1) space solution
+"""
+int a[N] # This is the input
+int products_below[N];
+p=1;
+for(int i=0;i<N;++i) {
+  products_below[i]=p;
+  p*=a[i];
+}
+
+int products_above[N];
+p=1;
+for(int i=N-1;i>=0;--i) {
+  products_above[i]=p;
+  p*=a[i];
+}
+
+int products[N]; # This is the result
+for(int i=0;i<N;++i) {
+  products[i]=products_below[i]*products_above[i];
+}
+"""
+"""
+#If you need to be O(1) in space too you can do this
+
+int a[N] // This is the input
+int products[N];
+
+# Get the products below the current index
+p=1;
+for(int i=0;i<N;++i) {
+  products[i]=p;
+  p*=a[i];
+}
+
+# Get the products above the curent index
+p=1;
+for(int i=N-1;i>=0;--i) {
+  products[i]*=p;
+  p*=a[i];
+}
+"""
