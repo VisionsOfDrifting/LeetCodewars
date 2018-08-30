@@ -22,7 +22,7 @@ def num_ways_bottomup(N,X):
       return 1;
    ways = list(range(N+1))
    ways[0] = 1 #Trival Solution
-   for i in range(1,N+1,1): #Start at the end and step backwards
+   for i in range(1,N+1,1):
       total = 0
       #print(i)
       for j in range(len(X)):
