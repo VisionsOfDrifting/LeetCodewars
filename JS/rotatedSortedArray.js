@@ -19,13 +19,13 @@ function rotatedBinarySearch(array, target) {
     } else if(array[mid] > target) {
       if(array[high] > array[mid] || array[low] <= target) {
         high = mid - 1;
-      } else { // (array[high] <= array[mid] || array[low] > target)
+      } else { // (array[high] <= array[mid] && array[low] > target)
         low = mid + 1;
       }
     } else { // (array[mid] <= target)
       if(array[low] < array[mid] || array[high] >= target){
         low = mid + 1;
-      } else { // (array[low] >= array[mid] || array[high] < target)
+      } else { // (array[low] >= array[mid] && array[high] < target)
         high = mid -1;
       }
     }
