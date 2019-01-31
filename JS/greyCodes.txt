@@ -1,0 +1,242 @@
+Outer
+i 2
+Inner First
+j 1 arr[j] 1
+Inner First
+j 0 arr[j] 0
+Inner Second
+j 0 arr[j] 0
+Inner Second
+j 1 arr[j] 1
+Inner Third
+j 2 arr[j] 1
+Inner Third
+j 3 arr[j] 0
+End
+[ '00', '01', '11', '10' ]
+Outer
+i 4
+Inner First
+j 3 arr[j] 10
+Inner First
+j 2 arr[j] 11
+Inner First
+j 1 arr[j] 01
+Inner First
+j 0 arr[j] 00
+Inner Second
+j 0 arr[j] 00
+Inner Second
+j 1 arr[j] 01
+Inner Second
+j 2 arr[j] 11
+Inner Second
+j 3 arr[j] 10
+Inner Third
+j 4 arr[j] 10
+Inner Third
+j 5 arr[j] 11
+Inner Third
+j 6 arr[j] 01
+Inner Third
+j 7 arr[j] 00
+End
+[ '000', '001', '011', '010', '110', '111', '101', '100' ]
+Outer
+i 8
+Inner First
+j 7 arr[j] 100
+Inner First
+j 6 arr[j] 101
+Inner First
+j 5 arr[j] 111
+Inner First
+j 4 arr[j] 110
+Inner First
+j 3 arr[j] 010
+Inner First
+j 2 arr[j] 011
+Inner First
+j 1 arr[j] 001
+Inner First
+j 0 arr[j] 000
+Inner Second
+j 0 arr[j] 000
+Inner Second
+j 1 arr[j] 001
+Inner Second
+j 2 arr[j] 011
+Inner Second
+j 3 arr[j] 010
+Inner Second
+j 4 arr[j] 110
+Inner Second
+j 5 arr[j] 111
+Inner Second
+j 6 arr[j] 101
+Inner Second
+j 7 arr[j] 100
+Inner Third
+j 8 arr[j] 100
+Inner Third
+j 9 arr[j] 101
+Inner Third
+j 10 arr[j] 111
+Inner Third
+j 11 arr[j] 110
+Inner Third
+j 12 arr[j] 010
+Inner Third
+j 13 arr[j] 011
+Inner Third
+j 14 arr[j] 001
+Inner Third
+j 15 arr[j] 000
+End
+[ '0000',
+  '0001',
+  '0011',
+  '0010',
+  '0110',
+  '0111',
+  '0101',
+  '0100',
+  '1100',
+  '1101',
+  '1111',
+  '1110',
+  '1010',
+  '1011',
+  '1001',
+  '1000' ]
+Outer
+i 16
+Inner First
+j 15 arr[j] 1000
+Inner First
+j 14 arr[j] 1001
+Inner First
+j 13 arr[j] 1011
+Inner First
+j 12 arr[j] 1010
+Inner First
+j 11 arr[j] 1110
+Inner First
+j 10 arr[j] 1111
+Inner First
+j 9 arr[j] 1101
+Inner First
+j 8 arr[j] 1100
+Inner First
+j 7 arr[j] 0100
+Inner First
+j 6 arr[j] 0101
+Inner First
+j 5 arr[j] 0111
+Inner First
+j 4 arr[j] 0110
+Inner First
+j 3 arr[j] 0010
+Inner First
+j 2 arr[j] 0011
+Inner First
+j 1 arr[j] 0001
+Inner First
+j 0 arr[j] 0000
+Inner Second
+j 0 arr[j] 0000
+Inner Second
+j 1 arr[j] 0001
+Inner Second
+j 2 arr[j] 0011
+Inner Second
+j 3 arr[j] 0010
+Inner Second
+j 4 arr[j] 0110
+Inner Second
+j 5 arr[j] 0111
+Inner Second
+j 6 arr[j] 0101
+Inner Second
+j 7 arr[j] 0100
+Inner Second
+j 8 arr[j] 1100
+Inner Second
+j 9 arr[j] 1101
+Inner Second
+j 10 arr[j] 1111
+Inner Second
+j 11 arr[j] 1110
+Inner Second
+j 12 arr[j] 1010
+Inner Second
+j 13 arr[j] 1011
+Inner Second
+j 14 arr[j] 1001
+Inner Second
+j 15 arr[j] 1000
+Inner Third
+j 16 arr[j] 1000
+Inner Third
+j 17 arr[j] 1001
+Inner Third
+j 18 arr[j] 1011
+Inner Third
+j 19 arr[j] 1010
+Inner Third
+j 20 arr[j] 1110
+Inner Third
+j 21 arr[j] 1111
+Inner Third
+j 22 arr[j] 1101
+Inner Third
+j 23 arr[j] 1100
+Inner Third
+j 24 arr[j] 0100
+Inner Third
+j 25 arr[j] 0101
+Inner Third
+j 26 arr[j] 0111
+Inner Third
+j 27 arr[j] 0110
+Inner Third
+j 28 arr[j] 0010
+Inner Third
+j 29 arr[j] 0011
+Inner Third
+j 30 arr[j] 0001
+Inner Third
+j 31 arr[j] 0000
+End
+[ '00000',
+  '00001',
+  '00011',
+  '00010',
+  '00110',
+  '00111',
+  '00101',
+  '00100',
+  '01100',
+  '01101',
+  '01111',
+  '01110',
+  '01010',
+  '01011',
+  '01001',
+  '01000',
+  '11000',
+  '11001',
+  '11011',
+  '11010',
+  '11110',
+  '11111',
+  '11101',
+  '11100',
+  '10100',
+  '10101',
+  '10111',
+  '10110',
+  '10010',
+  '10011',
+  '10001',
+  '10000' ]
