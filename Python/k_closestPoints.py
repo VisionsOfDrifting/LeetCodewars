@@ -19,7 +19,7 @@ def calc_distance(N):
    distance = []
    i = 0
    for a, b in N:
-      distance.append(tuple((math.sqrt(a**2 + b**2),i))) 
+      distance.append(tuple((math.sqrt(a**2 + b**2), i)))
       #will use index to hash a map when returning points
       i += 1
    return distance
@@ -30,14 +30,14 @@ def negate_list(N):
       negative[i] = -N[i]
    return negative
 
-def maxheap_kSort(N,k):
+def maxheap_kSort(N, k):
    heap = []
-   #print(N)
+   # print(N)
    negative = negate_list(N)
    #print(negative)
    for i in range(k):
       heapq.heappush(heap, negative[i])
-   for i in range(k,len(N),1):
+   for i in range(k, len(N), 1):
       if heap[0] < negative[i]:
          heapq.heapreplace(heap, negative[i])
    maxHeap = negate_list(heap)
@@ -55,7 +55,7 @@ N_dist = calc_distance(N_points)
 #print("(Distance, index): ",N_dist)
 hash_map = dict(N_dist) #dict is (key,value); D[key] returns value
 #print("Our hash map: ",hash_map)
-unzipped = list(zip(*N_dist)) #list1_2=zip(*list3) is the reverse of list3=zip(list1,list2) 
+unzipped = list(zip(*N_dist)) #list1_2=zip(*list3) is the reverse of list3=zip(list1,list2)
 #print("(Distance),(indicies)",unzipped)
 shortest_dist = sort(unzipped[0]) #This is solution 1 quicksort()
 shortest_dist2 = maxheap_kSort(unzipped[0],k)

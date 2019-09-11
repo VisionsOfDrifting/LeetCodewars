@@ -1,0 +1,47 @@
+class Foo {
+private:
+    unsigned int semaphore = 0;
+    std::condition_variable cv;
+    std::mutex m;
+public:
+ 
+    Foo() {
+        
+    }
+
+    void first(function<void()> printFirst) {
+        std::unique_lock<std::mutex> lock(m);
+        cv.wait(lock, [this](){return semaphore == 0;});
+        // printFirst() outputs "first". Do not change or remove this line.
+        printFirst();
+        ++semaphore;
+         // notify semaphore has changed
+         cv.notify_all();
+ 
+    }
+
+    void second(function<void()> printSecond) {
+        std::unique_lock<std::mutex> lock(m);
+        cv.wait(lock, [this](){return semaphore == 1;});
+
+        // printSecond() outputs "second". Do not change or remove this line.
+        printSecond();
+  
+        ++semaphore;
+        // notify semaphore has changed
+        cv.notify_all();
+       
+    }
+
+    void third(function<void()> printThird) {
+        std::unique_lock<std::mutex> lock(m);
+        cv.wait(lock, [this](){return semaphore == 2;});
+        // printThird() outputs "third". Do not change or remove this line.
+        printThird();
+        semaphore = 0; // reset otherwise first() would deadlock the same instance of this object was passed to another thread after third() has been called.
+        // notify semaphore has changed and reset all values
+        cv.notify_all();
+
+        
+    }
+};
