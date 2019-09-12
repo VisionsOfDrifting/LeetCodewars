@@ -24,6 +24,7 @@ Pop() will take O(1), and its a pop on Q1.
 Push ()will take O(1) and its push on Q1.
 """
 
+
 class Quack:
     def __str__(self):
         print(self.left)
@@ -45,16 +46,7 @@ class Quack:
 
         # Re-balance stacks
         if not self.left:
-            size = len(self.right)
-            # Move half of right stack to buffer
-            for _ in range(size // 2):
-                self.temp.append(self.right.pop())
-            # move remainder of right to left
-            while self.right:
-                self.left.append(self.right.pop())
-            # Move temp elements back to right
-            while self.temp:
-                self.right.append(self.temp.pop())
+            self.balance(self.right, self.left)
 
         return self.left.pop()
 
@@ -64,26 +56,29 @@ class Quack:
 
         # Re-balance stacks
         if not self.right:
-            size = len(self.left)
-            # Move half of left stack to buffer
-            for _ in range(size // 2):
-                self.temp.append(self.left.pop())
-            # move remainder of left to right
-            while self.left:
-                self.right.append(self.left.pop())
-            # Move temp elements back to left
-            while self.temp:
-                self.left.append(self.temp.pop())
+            self.balance(self.left, self.right)
 
         # If you really want to implement pull() as the question is stated remove the return
         return self.right.pop()
 
-    # @TODO: This code can be improved by adding a balance() method
+    def balance(self, primary, secondary):
+        size = len(primary)
+        # Move half of primary stack to buffer
+        for _ in range(size // 2):
+            self.temp.append(primary.pop())
+        # Move remainder of primary to secondary
+        while primary:
+            secondary.append(primary.pop())
+        # Move temp elements back to primary
+        while self.temp:
+            primary.append(self.temp.pop())
 
 
 quack = Quack()
+
 for i in range(6):
     quack.push(i + 1)
+
 print(quack)
 print(quack.pull())
 print(quack)
