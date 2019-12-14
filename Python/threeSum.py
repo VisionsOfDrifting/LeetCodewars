@@ -13,7 +13,7 @@
    
 def threeSum(nums, L, target):
    for i in range (len(nums) - 2):
-      if(i = 0 or nums[i] != nums[i-1]):
+      if (i = 0 or nums[i] != nums[i-1]):
          left = i + 1
          right = len(nums) - 1
          new_sum = target - nums[i]
