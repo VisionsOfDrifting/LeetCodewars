@@ -30,7 +30,7 @@ def smallestPositive(N):
 #N = [1,2,0]
 N = [3,4,-1,0,1,2,6]
 print(N)
-print("Smallest Positive: ",smallestPositive(N))
+print("Smallest Positive: ", smallestPositive(N))
 
 #I didn't get this one fast enough. It took four solutions to find one that ran in O(N)
 #I didn't read constant space for the first solution
