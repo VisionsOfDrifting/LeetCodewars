@@ -15,6 +15,8 @@ def findOverlapping(list: []) -> int:
     count, current = 0, -float("inf")
     for i in range(len(list)):
         a, b, c = list[i]
+        print(count, current)
+        print(a, b, c)
         if current > a:
             count += 1
         else:

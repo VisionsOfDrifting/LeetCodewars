@@ -48,5 +48,5 @@ def overlappingIntervals(N):
 
 N = [(1, 3), (5, 8), (4, 10), (20, 25)]
 N2 = [(1, 3), (2, 8), (1, 10), (3, 25)]  # [(1,25)]
-merged = overlappingIntervals(N2)
+merged = overlappingIntervals(N)
 print(merged)
